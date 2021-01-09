@@ -1,0 +1,37 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3 style="color: black;">
+        Add Trainer
+    </h3>
+    <form (ngSubmit) ="onSubmit()">
+    
+        <div class="form-group">
+            <label style="color: black;">
+                Trainer Name
+            </label>
+    
+            <input type="text" class="form-control" id="name"
+                [(ngModel)]="trainer.name" name="name">
+    
+
+        </div>
+    
+        <div class="form-group">
+            <label style="color: black;">
+                Trainer Type
+            </label>
+    
+            <input type="text" class="form-control" id="type"
+                [(ngModel)]="trainer.type" name="type">
+    
+        </div>
+    
+       
+    
+        <button class="btn btn-dark" type="submit">Add Trainer</button>
+    
+    </form>
+
+</div>
+
+
